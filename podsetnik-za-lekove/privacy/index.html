@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<title>Privacy Policy — Podsetnik za lekove</title>
+<style>
+  :root {
+    color-scheme: light dark;
+    --bg: #f3f6f9;
+    --panel: #ffffff;
+    --text: #17212b;
+    --muted: #465461;
+    --accent: #0a58a6;
+    --rule: #d6e0ea;
+    --code-bg: #eef3f7;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #0f1720;
+      --panel: #16212c;
+      --text: #edf2f7;
+      --muted: #cbd5e0;
+      --accent: #8cc8ff;
+      --rule: #2d3748;
+      --code-bg: #22303e;
+    }
+  }
+  * { box-sizing: border-box; }
+  html {
+    background: var(--bg);
+    -webkit-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+  }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+    font-size: 1rem;
+    line-height: 1.65;
+  }
+  .page {
+    width: min(100%, 52rem);
+    margin: 0 auto;
+    padding: clamp(1rem, 4vw, 2.5rem) clamp(0.75rem, 3vw, 1.5rem) clamp(2rem, 6vw, 4rem);
+  }
+  .policy {
+    background: var(--panel);
+    border: 1px solid var(--rule);
+    border-radius: 0.8rem;
+    padding: clamp(1.25rem, 5vw, 3rem);
+    box-shadow: 0 1px 2px rgb(0 0 0 / 0.04);
+  }
+  h1, h2, h3 {
+    color: var(--text);
+    line-height: 1.22;
+    overflow-wrap: anywhere;
+  }
+  h1 {
+    margin: 0 0 0.6rem;
+    font-size: clamp(1.85rem, 6vw, 2.65rem);
+    letter-spacing: -0.015em;
+  }
+  h2 {
+    margin: 2.25rem 0 0.65rem;
+    font-size: clamp(1.3rem, 3.5vw, 1.55rem);
+    scroll-margin-top: 1rem;
+  }
+  h3 {
+    margin: 1.7rem 0 0.55rem;
+    font-size: 1.12rem;
+  }
+  p, ul { margin: 0 0 1rem; }
+  ul { padding-left: 1.4rem; }
+  li { margin: 0.35rem 0; }
+  a {
+    color: var(--accent);
+    text-decoration-thickness: 0.08em;
+    text-underline-offset: 0.16em;
+    overflow-wrap: anywhere;
+  }
+  a:focus-visible {
+    outline: 3px solid var(--accent);
+    outline-offset: 3px;
+    border-radius: 0.15rem;
+  }
+  .policy-header { margin-bottom: 1.4rem; }
+  .meta { color: var(--muted); margin-bottom: 0; }
+  code {
+    padding: 0.08em 0.3em;
+    border-radius: 0.25rem;
+    background: var(--code-bg);
+    font-family: "Cascadia Mono", Consolas, "Liberation Mono", monospace;
+    font-size: 0.9em;
+    overflow-wrap: anywhere;
+  }
+  @media print {
+    :root { --bg: #fff; --panel: #fff; --text: #000; --muted: #333; --accent: #000; --rule: #bbb; --code-bg: #f2f2f2; }
+    body { font-size: 11pt; }
+    .page { width: 100%; padding: 0; }
+    .policy { border: 0; box-shadow: none; padding: 0; }
+    a { text-decoration: underline; }
+  }
+</style>
+</head>
+<body>
+<main class="page">
+<article class="policy" aria-labelledby="policy-title">
+<header class="policy-header">
+<h1 id="policy-title">Privacy Policy — Podsetnik za lekove</h1>
+<p class="meta"><strong>Effective and last updated:</strong> <time datetime="2026-10-26">2026-10-26</time></p>
+</header>
+
+<p>Podsetnik za lekove is an Android medicine-reminder app that reminds you to take the medicines you entered and records what you did. This policy explains what the app does with information when you use it.</p>
+
+<p>Contact for privacy questions: <a href="mailto:b4ck2life@gmail.com">b4ck2life@gmail.com</a>.</p>
+
+<section aria-labelledby="local-health-data">
+<h2 id="local-health-data">Local health data</h2>
+<p>Medicines, schedules, dose history and the app's settings are stored in app-private storage on your device. The app has no account and no server of ours, so this information is not sent to us. Manual entry is always available and does not depend on a catalogue.</p>
+</section>
+
+<section aria-labelledby="photos-you-choose">
+<h2 id="photos-you-choose">Photos you choose</h2>
+<p>You select a photo through Android's system photo picker. The app copies and downscales the selected image into app-private files and addresses it by path, never by a persisted <code>content://</code> URI. It does not need a broad storage permission.</p>
+<p>The app does not upload the photo and excludes it from exports. The private copy is used as the medicine's picture.</p>
+</section>
+
+<section aria-labelledby="notifications-and-lock-screen-privacy">
+<h2 id="notifications-and-lock-screen-privacy">Notifications and lock-screen privacy</h2>
+<p>The lock-screen content of a reminder is your choice. The default is GENERIC. FULL may show the medicine and amount; GENERIC shows only "Time for your medicine" with a redacted public version; HIDDEN keeps the content off the lock screen entirely. Before the first unlock after a reboot, a delivered alarm is always generic and has no action buttons.</p>
+</section>
+
+<section aria-labelledby="optional-screenshot-protection">
+<h2 id="optional-screenshot-protection">Optional screenshot protection</h2>
+<p>Screenshot protection is one optional setting, OFF by default. When it is ON, the app applies Android's <code>FLAG_SECURE</code> to its window, which blocks screenshots of medicine screens and hides those screens from the recent-apps preview.</p>
+<p>When it is ON, protection covers Home, the medicine list, medicine details (including schedule and history), archived medicines, the medicine editor, catalogue search, the intake sheet and the ringing screen. Settings, Diagnostics and onboarding are not protected by this setting.</p>
+<p>The choice is stored locally as the ASCII code OFF or ON. It is not sent anywhere, stores no health content and needs no permission. If the stored value cannot be read, the app applies protection (ON) for safety, selects no option in Settings and leaves the stored bytes unchanged until you choose again. The setting does not alter notification content, lock-screen privacy, alarm delivery or saved state.</p>
+</section>
+
+<section aria-labelledby="catalogue-searches">
+<h2 id="catalogue-searches">Catalogue searches</h2>
+<p>The app offers two catalogue providers. Searching is optional, manual entry is always available, and the region you choose decides which provider is used.</p>
+
+<section aria-labelledby="rxnav-rxterms-united-states">
+<h3 id="rxnav-rxterms-united-states">RxNav / RxTerms (United States)</h3>
+<p>When you search the United States catalogue, the app sends your explicit search text to RxNav/RxTerms, a service of the U.S. National Library of Medicine (NLM). The request also carries this app's own User-Agent, <code>PodsetnikZaLekove (Android; com.digitaldreamsteam.podsetnikzalekove)</code>, and a standard <code>Accept: application/json</code> header.</p>
+<p>The region and the locale stay on the device. The app does not send an account or a device identifier. The result is cached locally for 12 hours.</p>
+</section>
+
+<section aria-labelledby="alims-serbia">
+<h3 id="alims-serbia">ALIMS (Serbia)</h3>
+<p>The Serbian ALIMS medicines register is published as open data and is re-exported daily. It has no query endpoint, so the app downloads the whole register (about 4.5 MB) and searches it on your phone. Neither your search text nor your locale leaves the device.</p>
+<p>The app makes that download at most once a day. Nothing about the user is sent; the only identifying header is this app's own User-Agent, and the request also carries a standard <code>Accept: application/json</code> header. The fully validated register revision is cached locally and replaced only by a validated successor. An imported medicine keeps its own immutable snapshot.</p>
+</section>
+</section>
+
+<section aria-labelledby="voice-input">
+<h2 id="voice-input">Voice input</h2>
+<p>Voice input is optional and always starts with one explicit tap on the microphone. After the runtime permission, if it is needed, that tap starts one bounded recognition attempt. You may stop or cancel it; a final result or failure ends it. There is no continuous, background or hotword listening.</p>
+<p>The sound is handled by the speech-recognition service Android selects. That service may use the network and has its own terms. This app creates no audio file, stores no transcript and logs no transcript. The recognition result lives in memory for that one attempt. If you use a phrase as a catalogue search, it becomes ordinary query text and follows the catalogue rules above, including the 12-hour local cache for a United States search.</p>
+<p>Typing always works instead, and you can deny or revoke the microphone at any time.</p>
+</section>
+
+<section aria-labelledby="spoken-reminders-text-to-speech">
+<h2 id="spoken-reminders-text-to-speech">Spoken reminders (text to speech)</h2>
+<p>If you turn on the voice alert mode, the app hands the spoken phrase to the text-to-speech service installed on your device. The phrase includes the medicine name and amount when the "speak medicine names" setting is on. The text-to-speech provider may use its own network service, so we cannot promise that speech never leaves the device.</p>
+<p>The app does not log the phrase or medicine values. If no usable engine is available, the alarm falls back to the bundled chime. You can switch the voice mode and "speak medicine names" off.</p>
+</section>
+
+<section aria-labelledby="exports">
+<h2 id="exports">Exports</h2>
+<p>Exports happen only when you start one. The app can write:</p>
+<ul>
+<li>a JSON backup of your medicines, schedules and dose history;</li>
+<li>a CSV history report.</li>
+</ul>
+<p>The app writes the export only to the destination you choose and does not upload it. The export does not include your photos. The resulting file is yours, and you can delete it.</p>
+</section>
+
+<section aria-labelledby="backup-and-device-transfer">
+<h2 id="backup-and-device-transfer">Backup and device transfer</h2>
+<p>Cloud backup of your medicine data is switched off. Moving the app to a new phone with Android's device-to-device transfer keeps your data. The app's cloud-backup rules exclude its database, preferences and files; device-to-device transfer includes them.</p>
+</section>
+
+<section aria-labelledby="no-account-backend-analytics-or-advertising">
+<h2 id="no-account-backend-analytics-or-advertising">No account, backend, analytics or advertising</h2>
+<p>The app needs no account. There is no backend or server of ours, no analytics, no crash reporting and no advertising. We do not sell or share your data.</p>
+</section>
+
+<section aria-labelledby="your-choices">
+<h2 id="your-choices">Your choices</h2>
+<ul>
+<li>Enter a medicine manually instead of using a catalogue, and choose the catalogue region.</li>
+<li>Start voice input only by tapping the microphone, stop or cancel an attempt, deny or revoke the microphone, or type instead.</li>
+<li>Switch the voice alert mode and "speak medicine names" off.</li>
+<li>Choose the notification and lock-screen content: FULL, GENERIC or HIDDEN.</li>
+<li>Leave screenshot protection off or turn it on.</li>
+<li>Choose whether to add a photo to a medicine.</li>
+<li>Choose whether to export, where to save the file, and whether to delete it.</li>
+</ul>
+</section>
+
+<section aria-labelledby="medical-device-disclaimer">
+<h2 id="medical-device-disclaimer">Medical-device disclaimer</h2>
+<p>This app is not a medical device. It reminds and records; it does not replace your doctor, pharmacist or the leaflet that came with your medicine. It does not diagnose, treat, recommend or adjust doses, and it does not check interactions. If you are unsure about a dose, ask a healthcare professional.</p>
+</section>
+
+<section aria-labelledby="changes-to-this-policy">
+<h2 id="changes-to-this-policy">Changes to this policy</h2>
+<p>This policy is effective and last updated on 2026-10-26. If the app's data practices or this policy change, the published policy will be updated and its last-updated date will change. The date at the top identifies the current version.</p>
+</section>
+
+<section aria-labelledby="contact">
+<h2 id="contact">Contact</h2>
+<p>For questions about this policy or the app's privacy practices, contact <a href="mailto:b4ck2life@gmail.com">b4ck2life@gmail.com</a>.</p>
+</section>
+
+</article>
+</main>
+</body>
+</html>
