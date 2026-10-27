@@ -1,6 +1,6 @@
 # Privacy Policy — Podsetnik za lekove
 
-**Effective and last updated:** 2026-10-26
+**Effective and last updated:** 2026-10-27
 
 Podsetnik za lekove is an Android medicine-reminder app that reminds you to take the medicines you entered and records what you did. This policy explains what the app does with information when you use it.
 
@@ -73,7 +73,13 @@ Cloud backup of your medicine data is switched off. Moving the app to a new phon
 
 ## No account, backend, analytics or advertising
 
-The app needs no account. There is no backend or server of ours, no analytics, no crash reporting and no advertising. We do not sell or share your data.
+The app needs no account. There is no analytics, no crash reporting and no advertising. We do not sell your data, and we do not operate a backend that receives it. When you explicitly use catalogue search, voice input, spoken reminders, exports or support email, information is handled only by the provider or destination described in this policy.
+
+## Support email and external actions
+
+"Write to us" opens the user's mail composer addressed to b4ck2life@gmail.com. It pre-fills only the app version, Android release and API level, and interface language. It adds no medicine, schedule, transcript, catalogue query, attachment, stream or content URI. Nothing is sent unless the user chooses to send the message. The selected mail provider and recipient then handle the message under their own terms.
+
+Rating and privacy-policy actions only open their external destination; the app adds no medicine data. Share remains unavailable while PLAY_LISTING_URL is null.
 
 ## Your choices
 
@@ -91,7 +97,7 @@ This app is not a medical device. It reminds and records; it does not replace yo
 
 ## Changes to this policy
 
-This policy is effective and last updated on 2026-10-26. If the app's data practices or this policy change, the published policy will be updated and its last-updated date will change. The date at the top identifies the current version.
+This policy is effective and last updated on 2026-10-27. If the app's data practices or this policy change, the published policy will be updated and its last-updated date will change. The date at the top identifies the current version.
 
 ## Contact
 
